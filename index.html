@@ -3,44 +3,367 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page • PRODIGY_WD_01 • Vinit Mishra</title>
+  <title>Vinit Mishra • Full Stack Developer • PRODIGY_WD_01</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+  <!-- Animated Background -->
+  <div class="animated-bg">
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+    <div class="circle circle-3"></div>
+  </div>
 
+  <!-- Navigation -->
   <nav id="navbar">
-    <div class="logo">Prodigy</div>
-    <ul class="menu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
+    <div class="logo">
+      <i class="fas fa-code"></i>
+      <span>Vinit Mishra</span>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="menu" id="menu">
+      <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+      <li><a href="#projects"><i class="fas fa-briefcase"></i> Projects</a></li>
+      <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
     </ul>
   </nav>
 
+  <!-- Hero Section -->
   <section id="home" class="hero">
-    <h1>Welcome to My Landing Page</h1>
-    <p>This is Task 01 for Prodigy InfoTech Web Dev Internship.</p>
-    <a href="#about" class="btn">Explore More</a>
+    <div class="hero-content">
+      <div class="profile-image">
+        <div class="image-border"></div>
+        <img src="https://github.com/vinitmishra17.png" alt="Vinit Mishra">
+      </div>
+      <h1 class="glitch" data-text="Vinit Mishra">Vinit Mishra</h1>
+      <p class="typewriter" id="typewriter"></p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-rocket"></i> View Projects
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <i class="fas fa-paper-plane"></i> Get In Touch
+        </a>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/vinitmishra17" target="_blank" class="social-btn" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/vinit-mishra-02321b329" target="_blank" class="social-btn" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:vinitmishra@example.com" class="social-btn" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse"></div>
+      <p>Scroll Down</p>
+    </div>
   </section>
 
+  <!-- About Section -->
   <section id="about" class="section">
-    <h2>About</h2>
-    <p>A modern responsive landing page built using HTML, CSS, and JavaScript.</p>
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">
+        <i class="fas fa-user-circle"></i> About Me
+      </h2>
+      <div class="about-content">
+        <div class="about-text" data-aos="fade-right">
+          <p class="lead">👋 Hello! I'm <strong>Vinit Mishra</strong>, a passionate web developer and student at <strong>Shree L. R. Tiwari College of Engineering</strong>.</p>
+          <p>I'm currently interning at <strong>Prodigy InfoTech</strong>, where I'm honing my skills in modern web development. I love creating beautiful, responsive, and user-friendly websites.</p>
+          <p>🎓 I'm constantly learning and exploring new technologies to build innovative solutions that make a difference.</p>
+          <div class="stats">
+            <div class="stat-item">
+              <i class="fas fa-project-diagram"></i>
+              <h3>5+</h3>
+              <p>Projects</p>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-code"></i>
+              <h3>10+</h3>
+              <p>Technologies</p>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-clock"></i>
+              <h3>100+</h3>
+              <p>Hours Coding</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-image" data-aos="fade-left">
+          <div class="code-card">
+            <div class="code-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="code-body">
+              <code>
+                <span class="keyword">const</span> developer = {
+                <br>&nbsp;&nbsp;name: <span class="string">"Vinit Mishra"</span>,
+                <br>&nbsp;&nbsp;role: <span class="string">"Web Developer"</span>,
+                <br>&nbsp;&nbsp;company: <span class="string">"Prodigy InfoTech"</span>,
+                <br>&nbsp;&nbsp;skills: [<span class="string">"HTML"</span>, <span class="string">"CSS"</span>, <span class="string">"JavaScript"</span>],
+                <br>&nbsp;&nbsp;passionate: <span class="boolean">true</span>
+                <br>};
+              </code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="services" class="section">
-    <h2>Services</h2>
-    <p>Clean UI • Smooth Animations • Responsive Layout</p>
+  <!-- Skills Section -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">
+        <i class="fas fa-laptop-code"></i> Skills & Technologies
+      </h2>
+      <div class="skills-grid">
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+          <i class="fab fa-html5"></i>
+          <h3>HTML5</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+          <i class="fab fa-css3-alt"></i>
+          <h3>CSS3</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 85%"></div>
+          </div>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+          <i class="fab fa-js"></i>
+          <h3>JavaScript</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+          <i class="fab fa-react"></i>
+          <h3>React</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 75%"></div>
+          </div>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+          <i class="fab fa-node"></i>
+          <h3>Node.js</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 70%"></div>
+          </div>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+          <i class="fab fa-git-alt"></i>
+          <h3>Git</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 85%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Connect with me on LinkedIn & GitHub.</p>
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">
+        <i class="fas fa-folder-open"></i> Featured Projects
+      </h2>
+      <div class="projects-grid">
+        <div class="project-card" data-aos="flip-left" data-aos-delay="100">
+          <div class="project-image">
+            <img src="https://raw.githubusercontent.com/vinitmishra17/PRODIGY_WD_01/main/preview.png" alt="Landing Page" onerror="this.src='https://via.placeholder.com/400x250/6366f1/ffffff?text=Landing+Page'">
+            <div class="project-overlay">
+              <a href="https://vinitmishra17.github.io/PRODIGY_WD_01/" target="_blank" class="project-btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="https://github.com/vinitmishra17/PRODIGY_WD_01" target="_blank" class="project-btn">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Responsive Landing Page</h3>
+            <p>A modern, responsive landing page with smooth scrolling and interactive navigation.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="flip-left" data-aos-delay="200">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/400x250/6366f1/ffffff?text=Portfolio+Website" alt="Portfolio">
+            <div class="project-overlay">
+              <a href="#" class="project-btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="https://github.com/vinitmishra17" target="_blank" class="project-btn">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio showcasing projects, skills, and professional experience.</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">Animation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="flip-left" data-aos-delay="300">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/400x250/6366f1/ffffff?text=Web+Application" alt="Web App">
+            <div class="project-overlay">
+              <a href="#" class="project-btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="https://github.com/vinitmishra17" target="_blank" class="project-btn">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Web Application</h3>
+            <p>Full-stack web application with modern UI/UX and responsive design.</p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="view-more" data-aos="fade-up">
+        <a href="https://github.com/vinitmishra17" target="_blank" class="btn btn-primary">
+          <i class="fab fa-github"></i> View All Projects on GitHub
+        </a>
+      </div>
+    </div>
   </section>
 
+  <!-- Contact Section -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">
+        <i class="fas fa-paper-plane"></i> Get In Touch
+      </h2>
+      <div class="contact-content">
+        <div class="contact-info" data-aos="fade-right">
+          <h3>Let's Connect!</h3>
+          <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+          
+          <div class="contact-items">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Mumbai, Maharashtra, India</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:vinitmishra@example.com">vinitmishra@example.com</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-building"></i>
+              <div>
+                <h4>Current Role</h4>
+                <p>Intern at Prodigy InfoTech</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links-contact">
+            <a href="https://github.com/vinitmishra17" target="_blank" class="social-btn-large">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/vinit-mishra-02321b329" target="_blank" class="social-btn-large">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form" data-aos="fade-left">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" required>
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Your Email" required>
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" placeholder="Subject" required>
+              <i class="fas fa-tag"></i>
+            </div>
+            <div class="form-group">
+              <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+              <i class="fas fa-comment"></i>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Vinit Mishra • PRODIGY_WD_01</p>
+    <div class="footer-content">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <i class="fas fa-code"></i>
+          <span>Vinit Mishra</span>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p>© 2025 Vinit Mishra • PRODIGY_WD_01 • Made with <i class="fas fa-heart"></i></p>
+        <div class="footer-social">
+          <a href="https://github.com/vinitmishra17" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/vinit-mishra-02321b329" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:vinitmishra@example.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <button id="scrollTop" class="scroll-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
   </footer>
 
   <script src="script.js"></script>
